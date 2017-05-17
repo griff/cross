@@ -63,6 +63,7 @@ EOF
 
         pushd $td
         cargo update -p libc
+        cargo update -p time
         cross build --target $TARGET
         popd
 
